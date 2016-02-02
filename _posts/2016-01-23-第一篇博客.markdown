@@ -12,7 +12,7 @@ tags: [daily,first]
 
 
 
-![有帮助的截图](/assets/images/favicon.png)
+![有帮助的截图](/assets/images/profile.jpg)
 你可以直接 [下载 PDF]({{ site.url }}/assets/mydoc.pdf)
 {% highlight objc linenos %}
 func weatherViewControllerForDay(day: WeatherViewController.Day) -> UIViewController {
