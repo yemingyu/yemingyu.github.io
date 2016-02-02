@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>夜禹</title>
+    <description>不积跬步无以至千里，不积小流无以成江海</description>
+    <link>http://yemingyu.com//</link>
+    <atom:link href="http://yemingyu.com//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 02 Feb 2016 17:45:12 +0800</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 17:45:12 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>第一篇博客</title>
+        <description>&lt;p&gt;虽然我的工作是程序员，但是最近半年其实我的主要干的事儿是养了一个小孩。 所以这半年来可以说没有积累到什么技术，反而是积累了不少养小孩的心得。 当知道了有这么次会议可以分享这半年来的心得的时候，我毫不犹豫地选定了主题。那就是&lt;/p&gt;
+
+&lt;p&gt;如何打造一个让人愉快的小孩
+但考虑到这是一次开发者会议…当我把这个想法和题目提交给大会的时候，被残酷地拒绝了。考虑到我们是一次开发者大会，所以我需要找一些更合适的主题。其实如果你对自己的代码有感情的话，我们开发和维护的项目或者框架就如同自己的孩子一般这也是我所能找到的两者的共同点。所以，我将原来拟定的主题换了两个字：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/favicon.png&quot; alt=&quot;有帮助的截图&quot; /&gt;
+你可以直接 &lt;a href=&quot;http://yemingyu.com/assets/mydoc.pdf&quot;&gt;下载 PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objc&quot; data-lang=&quot;objc&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weatherViewControllerForDay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WeatherViewController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIViewController&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;storyboard&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instantiateViewControllerWithIdentifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;WeatherViewController&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WeatherViewController&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UINavigationController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;rootViewController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;vc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;day&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nav&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;    if (currentClass) {
+        unsigned int methodCount;
+        Method *methodList = class_copyMethodList(currentClass, &amp;amp;methodCount);
+        IMP lastImp = NULL;
+        SEL lastSel = NULL;
+        for (NSInteger i = 0; i &amp;lt; methodCount; i++) {
+            Method method = methodList[i];
+            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method)) encoding:NSUTF8StringEncoding];
+            if ([@&quot;printTest&quot; isEqualToString:methodName]) {
+                lastImp = method_getImplementation(method);
+                lastSel = method_getName(method);
+            }
+        }
+        typedef void (*fn)(id,SEL);
+        
+        if (lastImp != NULL) {
+            fn f = (fn)lastImp;
+            f(test,lastSel);
+        }
+        free(methodList);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+这是我在今年 1 月 10 日 @Swift 开发者大会 上演讲的文字稿。相关的视频还在制作中，没有到现场的朋友可以通过这个文字稿了解到这个 session 的内容。
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;虽然我的工作是程序员，但是最近半年其实我的主要干的事儿是养了一个小孩。 所以这半年来可以说没有积累到什么技术，反而是积累了不少养小孩的心得。 当知道了有这么次会议可以分享这半年来的心得的时候，我毫不犹豫地选定了主题。那就是&lt;/p&gt;
+
+&lt;p&gt;如何打造一个让人愉快的小孩
+但考虑到这是一次开发者会议…当我把这个想法和题目提交给大会的时候，被残酷地拒绝了。考虑到我们是一次开发者大会，所以我需要找一些更合适的主题。其实如果你对自己的代码有感情的话，我们开发和维护的项目或者框架就如同自己的孩子一般这也是我所能找到的两者的共同点。所以，我将原来拟定的主题换了两个字：&lt;/p&gt;
+
+&lt;p&gt;如何打造一个让人愉快的框架
+在正式开始前，我想先给大家分享一个故事。我们那儿的 iOS 开发小组里有一个叫做武田君的人，他的代码写得不错，做事也非常严谨，可以说是楷模般的员工。但是他有一个致命的弱点 – 喜欢自己发明轮子。他出于本能地抗拒在代码中使用第三方框架，所以接到开发任务以后他一般都要花比其他小伙伴更多的时间才能完成。&lt;/p&gt;
+
+&lt;p&gt;武田君其实在各个方面都有建树…比如&lt;/p&gt;
+
+&lt;p&gt;网络请求
+模型解析
+导航效果
+视图动画 …
+不过虽然造了很多轮子，但是代码的重用比较糟糕，耦合严重。在新项目中使用的话，只能复制粘贴，然后针对项目修修补补。因为承担的任务总是没有办法完成，他一直是项目deadline的决定者，在日本这种社会，压力可想而知。就在我这次回国之前，武田君来向我借了一本我本科时候最喜欢的书。就是这本：&lt;/p&gt;
+
+&lt;p&gt;我有时候就想，到底是什么让一个开发者面临如此大的精神压力，我们有什么办法来缓解这种压力。在我们有限的开发生涯中，应该如何有效利用时间来做一些更有价值的事情。&lt;/p&gt;
+
+&lt;p&gt;显然，我们不可能一天建成罗马，也不可能一个人建成罗马。我们需要一些方法把自己和别人写的代码组织起来，高效地利用，并以此为基础构建软件。这就涉及到使用和维护框架。如何利用框架迅速构建应用，以及在开发和发布一个框架的时候应该注意一些什么，这是我今天想讲的主题。当然，为了让大家安心和专注于今天的内容，而不是挂念武田君的命运，特此声明：&lt;/p&gt;
+
+&lt;p&gt;以上故事纯属虚构，如有雷同实属巧合
+使用框架&lt;/p&gt;
+
+&lt;p&gt;在了解如何制作框架之前，先让我们看看如何使用框架。可以说，如果你想成为一个框架的提供者，首先你必须是一个优秀的使用者。&lt;/p&gt;
+
+&lt;p&gt;在 iOS 开发的早期，使用框架其实并不是一件让人愉悦的事情。可能有几年经验的开发者都有这样的体会，那就是：&lt;/p&gt;
+
+&lt;p&gt;忘不了 那些年，被手动引用和 .a 文件所支配的恐惧
+其实恐惧源于未知，回想一下，当我们刚接触软件开发的时候，懵懵懂懂地引用了一个静态库，然后面对一排排编译器报错时候手足无措的绝望。但是当我们了解了静态库的话，我们就能克服这种恐惧了。&lt;/p&gt;
+
+&lt;p&gt;什么是静态库 (Static Library)
+所谓静态库，或者说 .a 文件，就是一系列从源码编译的目标文件的集合。它是你的源码的实现所对应的二进制。配合上公共的 .h 文件，我们可以获取到 .a 中暴露的方法或者成员等。在最后编译 app 的时候.a 将被链接到最终的可执行文件中，之后每次都随着app的可执行二进制文件一同加载，你不能控制加载的方式和时机，所以称为静态库。&lt;/p&gt;
+
+&lt;p&gt;在 iOS 8 之前，iOS 只支持以静态库的方式来使用第三方的代码。&lt;/p&gt;
+
+&lt;p&gt;什么是动态框架 (Dynamic Framework)
+与静态相对应的当然是动态。我们每天使用的 iOS 系统的框架是以 .framework 结尾的，它们就是动态框架。&lt;/p&gt;
+
+&lt;p&gt;Framework 其实是一个 bundle，或者说是一个特殊的文件夹。系统的 framework 是存在于系统内部，而不会打包进 app 中。app 的启动的时候会检查所需要的动态框架是否已经加载。像 UIKit 之类的常用系统框架一般已经在内存中，就不需要再次加载，这可以保证 app 启动速度。相比静态库，framework 是自包含的，你不需要关心头文件位置等，使用起来很方便。&lt;/p&gt;
+
+&lt;p&gt;Universal Framework
+iOS 8 之前也有一些第三方库提供 .framework 文件，但是它们实质上都是静态库，只不过通过一些方法进行了包装，相比传统的 .a 要好用一些。像是原来的 Dropbox 和 Facebook 等都使用这种方法来提供 SDK。不过因为已经脱离时代，所以在此略过不说。有兴趣和需要的朋友可以参看一下这里和这里。
+title: 
+I have really enjoyed the simplicity of the &lt;a href=&quot;https://github.com/tryghost/Ghost&amp;quot; target=&amp;quot;_blank&quot;&gt;Ghost&lt;/a&gt; blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with &lt;a href=&quot;https://pages.github.com&amp;quot; target=&amp;quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt; so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-buster&quot;&gt;Installing Buster&lt;/h3&gt;
+
+&lt;p&gt;Details on Buster can be found &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Basically, you need to install &lt;strong&gt;wget&lt;/strong&gt; and &lt;strong&gt;git&lt;/strong&gt; with &lt;a href=&quot;http://brew.sh/&amp;quot; target=&amp;quot;_blank&quot;&gt;brew&lt;/a&gt; (if they are not already installed on your system) then install Buster with &lt;a href=&quot;https://pip.pypa.io&amp;quot; target=&amp;quot;_blank&quot;&gt;pip&lt;/a&gt;.&lt;br /&gt;
+Just run the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install wget
+brew install git
+pip install buster&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To test the install of Buster run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see current version display (i.e. &lt;code&gt;0.1.3&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-ghost&quot;&gt;Setting up Ghost&lt;/h3&gt;
+
+&lt;p&gt;First off you need to download of a copy of the latest version of Ghost found &lt;a href=&quot;https://github.com/TryGhost/Ghost/releases&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Extract the archive and open a console and go to the newly created directory and run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --production
+npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://127.0.0.1:2368/ghost in a browser and go through the setup screens to create an admin account and start using ghost.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-buster&quot;&gt;Setting up Buster&lt;/h3&gt;
+
+&lt;p&gt;In a new console window go to the directory where ghost is installed and type the following to setup buster:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster setup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Just follow the prompts and provide the data needed. Please view the README on the &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster GitHub page&lt;/a&gt; for more details on how to use Buster.&lt;/p&gt;
+
+&lt;h3 id=&quot;generating-static-pages-with-buster&quot;&gt;Generating static pages with Buster&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing this Buster had some issues with missing the generation of some needed files and creating some files with incorrect URL reference in page. I created this script as a workaround for those issue.  So create a file (I called it &lt;strong&gt;build-static.sh&lt;/strong&gt;) and be sure and change out the references to http://joshgerdes.com and replace them with your remote site URL.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Generate static files with buster&lt;/span&gt;
+buster generate --domain&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;http://127.0.0.1:2368  
+
+&lt;span class=&quot;c&quot;&gt;# Copy sitemap files&lt;/span&gt;
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xsl
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-pages.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-posts.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-authors.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-tags.xml
+
+&lt;span class=&quot;c&quot;&gt;# Replace urls that were missed by buster&lt;/span&gt;
+find static/* -name robots.txt -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xsl -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xml -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#loc&amp;gt;http://localhost:2368#loc&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#u=http://localhost:2368#u=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#url=http://localhost:2368#url=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#href=&amp;quot;http://localhost:2368#href=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#src=&amp;quot;http://localhost:2368#src=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#link&amp;gt;http://localhost:2368#link&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt; 
+
+&lt;span class=&quot;c&quot;&gt;# Add CNAME file for github pages&lt;/span&gt;
+buster add-domain joshgerdes.com
+
+&lt;span class=&quot;c&quot;&gt;# Copy files that were missed by buster&lt;/span&gt;
+cp humans.txt static/humans.txt
+cp -R content/images static/content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now give the newly created file execute permissions&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chmod +x ./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then just run in the directory where you installed ghost:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This should generate static files under a subdirectory called &lt;code&gt;/static&lt;/code&gt; which should be connected to your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: I also forked the Buster repository and made changes to the project to fix the broken URLs and add the sitemap files to the static output.  So if you want to use my version of Buster it can be found &lt;a href=&quot;https://github.com/joshgerdes/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Hopefully my pull request will be accepted shortly and it will become part of the main script.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;previewing-static-pages&quot;&gt;Previewing static pages&lt;/h3&gt;
+
+&lt;p&gt;You can preview the static pages by running the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster preview&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://localhost:9000 in a browser to view the static pages locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;deploying-static-pages-to-github&quot;&gt;Deploying static pages to GitHub&lt;/h3&gt;
+
+&lt;p&gt;If you like what you see, you can push those changes to your GitHub repository using normal commands or type the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With luck you should have a nice static version of your site published to GitHub to enjoy.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 23 Jan 2016 01:17:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2016/01/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2016/01/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+        
+        <category>daily</category>
+        
+        <category>first</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Jekyll-Uno - a minimal, responsive theme for Jekyll</title>
+        <description>&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; for link in site.links &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;`{``{` link.url | prepend: site.baseurl `}``}`&quot;&gt;`{``{` link.title `}``}`&lt;/a&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; endfor &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I decied to convert my site over to &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; from &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt; and &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages/&quot;&gt;host it with Github Pages&lt;/a&gt;. This allows all my content to live in static files and be built automatically by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;. My hope is that with this simplification (and automation) I might actually post a little more this year.&lt;/p&gt;
+
+&lt;p&gt;During the conversion process I decided that I liked the theme I was currently using with &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt; but found it was not available for &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; yet.  So I decided to port the theme over and share.&lt;/p&gt;
+
+&lt;p&gt;Even if this doesn’t motivate me to post more at least a new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; theme came out of it. Enjoy!&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll-uno-theme&quot;&gt;Jekyll-Uno Theme&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/joshgerdes/jekyll-uno&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/joshgerdes/jekyll-uno/master/screenshot.png&quot; alt=&quot;Jekyll-Uno Theme screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;More details can be found on the theme’s &lt;a href=&quot;https://github.com/joshgerdes/jekyll-uno&quot;&gt;project page&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Jan 2016 23:28:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy%202/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy%202/</guid>
+        
+        <category>jekyll</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Jekyll-Uno - a minimal, responsive theme for Jekyll</title>
+        <description>&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; for link in site.links &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;`{``{` link.url | prepend: site.baseurl `}``}`&quot;&gt;`{``{` link.title `}``}`&lt;/a&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; endfor &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I decied to convert my site over to &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; from &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt; and &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages/&quot;&gt;host it with Github Pages&lt;/a&gt;. This allows all my content to live in static files and be built automatically by &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;. My hope is that with this simplification (and automation) I might actually post a little more this year.&lt;/p&gt;
+
+&lt;p&gt;During the conversion process I decided that I liked the theme I was currently using with &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt; but found it was not available for &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; yet.  So I decided to port the theme over and share.&lt;/p&gt;
+
+&lt;p&gt;Even if this doesn’t motivate me to post more at least a new &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; theme came out of it. Enjoy!&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll-uno-theme&quot;&gt;Jekyll-Uno Theme&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/joshgerdes/jekyll-uno&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/joshgerdes/jekyll-uno/master/screenshot.png&quot; alt=&quot;Jekyll-Uno Theme screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;More details can be found on the theme’s &lt;a href=&quot;https://github.com/joshgerdes/jekyll-uno&quot;&gt;project page&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Jan 2016 23:28:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy/</guid>
+        
+        <category>jekyll</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Host a static Ghost blog on GitHub using Buster</title>
+        <description>&lt;p&gt;I have really enjoyed the simplicity of the &lt;a href=&quot;https://github.com/tryghost/Ghost&amp;quot; target=&amp;quot;_blank&quot;&gt;Ghost&lt;/a&gt; blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with &lt;a href=&quot;https://pages.github.com&amp;quot; target=&amp;quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt; so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-buster&quot;&gt;Installing Buster&lt;/h3&gt;
+
+&lt;p&gt;Details on Buster can be found &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Basically, you need to install &lt;strong&gt;wget&lt;/strong&gt; and &lt;strong&gt;git&lt;/strong&gt; with &lt;a href=&quot;http://brew.sh/&amp;quot; target=&amp;quot;_blank&quot;&gt;brew&lt;/a&gt; (if they are not already installed on your system) then install Buster with &lt;a href=&quot;https://pip.pypa.io&amp;quot; target=&amp;quot;_blank&quot;&gt;pip&lt;/a&gt;.  Just run the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install wget Just run the following commands: Just run the following commands: Just run the following commands:
+brew install git
+pip install buster&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To test the install of Buster run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see current version display (i.e. &lt;code&gt;0.1.3&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-ghost&quot;&gt;Setting up Ghost&lt;/h3&gt;
+
+&lt;p&gt;First off you need to download of a copy of the latest version of Ghost found &lt;a href=&quot;https://github.com/TryGhost/Ghost/releases&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Extract the archive and open a console and go to the newly created directory and run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --production
+npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://127.0.0.1:2368/ghost in a browser and go through the setup screens to create an admin account and start using ghost.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-buster&quot;&gt;Setting up Buster&lt;/h3&gt;
+
+&lt;p&gt;In a new console window go to the directory where ghost is installed and type the following to setup buster:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster setup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Just follow the prompts and provide the data needed. Please view the README on the &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster GitHub page&lt;/a&gt; for more details on how to use Buster.&lt;/p&gt;
+
+&lt;h3 id=&quot;generating-static-pages-with-buster&quot;&gt;Generating static pages with Buster&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing this Buster had some issues with missing the generation of some needed files and creating some files with incorrect URL reference in page. I created this script as a workaround for those issue.  So create a file (I called it &lt;strong&gt;build-static.sh&lt;/strong&gt;) and be sure and change out the references to http://joshgerdes.com and replace them with your remote site URL.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; for link in site.links &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;`{``{` link.url | prepend: site.baseurl `}``}`&quot;&gt;`{``{` link.title `}``}`&lt;/a&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; endfor &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; highlight objc &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;
+	if (currentClass) {
+	        unsigned int methodCount;```
+	        Method &lt;em&gt;methodList = class_copyMethodList(currentClass, &amp;amp;methodCount);
+	        IMP lastImp = NULL;
+	        SEL lastSel = NULL;
+	        for (NSInteger i = 0; i &amp;lt; methodCount; i++) {
+	            Method method = methodList[i];
+	            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method))
+	                                                      encoding:NSUTF8StringEncoding];
+	            if ([@”printTest” isEqualToString:methodName]) {
+	                lastImp = method_getImplementation(method);
+	                lastSel = method_getName(method);
+	            }
+	        }
+	        typedef void (&lt;/em&gt;fn)(id,SEL);&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;        if (lastImp != NULL) {
+            fn f = (fn)lastImp;
+            f(test,lastSel);
+        }
+        free(methodList);
+} `{``%` endhighlight `%``}`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Generate static files with buster&lt;/span&gt;
+buster generate --domain&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;http://127.0.0.1:2368  
+
+&lt;span class=&quot;c&quot;&gt;# Copy sitemap files&lt;/span&gt;
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xsl
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-pages.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-posts.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-authors.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-tags.xml
+
+&lt;span class=&quot;c&quot;&gt;# Replace urls that were missed by buster&lt;/span&gt;
+find static/* -name robots.txt -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xsl -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xml -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#loc&amp;gt;http://localhost:2368#loc&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#u=http://localhost:2368#u=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#url=http://localhost:2368#url=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#href=&amp;quot;http://localhost:2368#href=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#src=&amp;quot;http://localhost:2368#src=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#link&amp;gt;http://localhost:2368#link&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt; 
+
+&lt;span class=&quot;c&quot;&gt;# Add CNAME file for github pages&lt;/span&gt;
+buster add-domain joshgerdes.com
+
+&lt;span class=&quot;c&quot;&gt;# Copy files that were missed by buster&lt;/span&gt;
+cp humans.txt static/humans.txt
+cp -R content/images static/content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now give the newly created file execute permissions&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chmod +x ./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then just run in the directory where you installed ghost:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This should generate static files under a subdirectory called &lt;code&gt;/static&lt;/code&gt; which should be connected to your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: I also forked the Buster repository and made changes to the project to fix the broken URLs and add the sitemap files to the static output.  So if you want to use my version of Buster it can be found &lt;a href=&quot;https://github.com/joshgerdes/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Hopefully my pull request will be accepted shortly and it will become part of the main script.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;previewing-static-pages&quot;&gt;Previewing static pages&lt;/h3&gt;
+
+&lt;p&gt;You can preview the static pages by running the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster preview&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://localhost:9000 in a browser to view the static pages locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;deploying-static-pages-to-github&quot;&gt;Deploying static pages to GitHub&lt;/h3&gt;
+
+&lt;p&gt;If you like what you see, you can push those changes to your GitHub repository using normal commands or type the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With luck you should have a nice static version of your site published to GitHub to enjoy.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Mar 2015 19:30:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/03/12/host-a-static-ghost-blog-on-github%20copy%202/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/03/12/host-a-static-ghost-blog-on-github%20copy%202/</guid>
+        
+        <category>ghost</category>
+        
+        <category>buster</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Host a static Ghost blog on GitHub using Buster</title>
+        <description>&lt;p&gt;I have really enjoyed the simplicity of the &lt;a href=&quot;https://github.com/tryghost/Ghost&amp;quot; target=&amp;quot;_blank&quot;&gt;Ghost&lt;/a&gt; blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with &lt;a href=&quot;https://pages.github.com&amp;quot; target=&amp;quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt; so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-buster&quot;&gt;Installing Buster&lt;/h3&gt;
+
+&lt;p&gt;Details on Buster can be found &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Basically, you need to install &lt;strong&gt;wget&lt;/strong&gt; and &lt;strong&gt;git&lt;/strong&gt; with &lt;a href=&quot;http://brew.sh/&amp;quot; target=&amp;quot;_blank&quot;&gt;brew&lt;/a&gt; (if they are not already installed on your system) then install Buster with &lt;a href=&quot;https://pip.pypa.io&amp;quot; target=&amp;quot;_blank&quot;&gt;pip&lt;/a&gt;.  Just run the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install wget Just run the following commands: Just run the following commands: Just run the following commands:
+brew install git
+pip install buster&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To test the install of Buster run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see current version display (i.e. &lt;code&gt;0.1.3&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-ghost&quot;&gt;Setting up Ghost&lt;/h3&gt;
+
+&lt;p&gt;First off you need to download of a copy of the latest version of Ghost found &lt;a href=&quot;https://github.com/TryGhost/Ghost/releases&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Extract the archive and open a console and go to the newly created directory and run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --production
+npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://127.0.0.1:2368/ghost in a browser and go through the setup screens to create an admin account and start using ghost.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-buster&quot;&gt;Setting up Buster&lt;/h3&gt;
+
+&lt;p&gt;In a new console window go to the directory where ghost is installed and type the following to setup buster:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster setup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Just follow the prompts and provide the data needed. Please view the README on the &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster GitHub page&lt;/a&gt; for more details on how to use Buster.&lt;/p&gt;
+
+&lt;h3 id=&quot;generating-static-pages-with-buster&quot;&gt;Generating static pages with Buster&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing this Buster had some issues with missing the generation of some needed files and creating some files with incorrect URL reference in page. I created this script as a workaround for those issue.  So create a file (I called it &lt;strong&gt;build-static.sh&lt;/strong&gt;) and be sure and change out the references to http://joshgerdes.com and replace them with your remote site URL.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; for link in site.links &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;`{``{` link.url | prepend: site.baseurl `}``}`&quot;&gt;`{``{` link.title `}``}`&lt;/a&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; endfor &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; highlight objc &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;
+	if (currentClass) {
+	        unsigned int methodCount;```
+	        Method &lt;em&gt;methodList = class_copyMethodList(currentClass, &amp;amp;methodCount);
+	        IMP lastImp = NULL;
+	        SEL lastSel = NULL;
+	        for (NSInteger i = 0; i &amp;lt; methodCount; i++) {
+	            Method method = methodList[i];
+	            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method))
+	                                                      encoding:NSUTF8StringEncoding];
+	            if ([@”printTest” isEqualToString:methodName]) {
+	                lastImp = method_getImplementation(method);
+	                lastSel = method_getName(method);
+	            }
+	        }
+	        typedef void (&lt;/em&gt;fn)(id,SEL);&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;        if (lastImp != NULL) {
+            fn f = (fn)lastImp;
+            f(test,lastSel);
+        }
+        free(methodList);
+} `{``%` endhighlight `%``}`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Generate static files with buster&lt;/span&gt;
+buster generate --domain&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;http://127.0.0.1:2368  
+
+&lt;span class=&quot;c&quot;&gt;# Copy sitemap files&lt;/span&gt;
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xsl
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-pages.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-posts.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-authors.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-tags.xml
+
+&lt;span class=&quot;c&quot;&gt;# Replace urls that were missed by buster&lt;/span&gt;
+find static/* -name robots.txt -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xsl -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xml -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#loc&amp;gt;http://localhost:2368#loc&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#u=http://localhost:2368#u=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#url=http://localhost:2368#url=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#href=&amp;quot;http://localhost:2368#href=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#src=&amp;quot;http://localhost:2368#src=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#link&amp;gt;http://localhost:2368#link&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt; 
+
+&lt;span class=&quot;c&quot;&gt;# Add CNAME file for github pages&lt;/span&gt;
+buster add-domain joshgerdes.com
+
+&lt;span class=&quot;c&quot;&gt;# Copy files that were missed by buster&lt;/span&gt;
+cp humans.txt static/humans.txt
+cp -R content/images static/content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now give the newly created file execute permissions&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chmod +x ./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then just run in the directory where you installed ghost:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This should generate static files under a subdirectory called &lt;code&gt;/static&lt;/code&gt; which should be connected to your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: I also forked the Buster repository and made changes to the project to fix the broken URLs and add the sitemap files to the static output.  So if you want to use my version of Buster it can be found &lt;a href=&quot;https://github.com/joshgerdes/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Hopefully my pull request will be accepted shortly and it will become part of the main script.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;previewing-static-pages&quot;&gt;Previewing static pages&lt;/h3&gt;
+
+&lt;p&gt;You can preview the static pages by running the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster preview&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://localhost:9000 in a browser to view the static pages locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;deploying-static-pages-to-github&quot;&gt;Deploying static pages to GitHub&lt;/h3&gt;
+
+&lt;p&gt;If you like what you see, you can push those changes to your GitHub repository using normal commands or type the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With luck you should have a nice static version of your site published to GitHub to enjoy.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Mar 2015 19:30:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/03/12/host-a-static-ghost-blog-on-github%20copy/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/03/12/host-a-static-ghost-blog-on-github%20copy/</guid>
+        
+        <category>ghost</category>
+        
+        <category>buster</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Host a static Ghost blog on GitHub using Buster</title>
+        <description>&lt;p&gt;I have really enjoyed the simplicity of the &lt;a href=&quot;https://github.com/tryghost/Ghost&amp;quot; target=&amp;quot;_blank&quot;&gt;Ghost&lt;/a&gt; blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with &lt;a href=&quot;https://pages.github.com&amp;quot; target=&amp;quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt; so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-buster&quot;&gt;Installing Buster&lt;/h3&gt;
+
+&lt;p&gt;Details on Buster can be found &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Basically, you need to install &lt;strong&gt;wget&lt;/strong&gt; and &lt;strong&gt;git&lt;/strong&gt; with &lt;a href=&quot;http://brew.sh/&amp;quot; target=&amp;quot;_blank&quot;&gt;brew&lt;/a&gt; (if they are not already installed on your system) then install Buster with &lt;a href=&quot;https://pip.pypa.io&amp;quot; target=&amp;quot;_blank&quot;&gt;pip&lt;/a&gt;.  Just run the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install wget Just run the following commands: Just run the following commands: Just run the following commands:
+brew install git
+pip install buster&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To test the install of Buster run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see current version display (i.e. &lt;code&gt;0.1.3&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-ghost&quot;&gt;Setting up Ghost&lt;/h3&gt;
+
+&lt;p&gt;First off you need to download of a copy of the latest version of Ghost found &lt;a href=&quot;https://github.com/TryGhost/Ghost/releases&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Extract the archive and open a console and go to the newly created directory and run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --production
+npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://127.0.0.1:2368/ghost in a browser and go through the setup screens to create an admin account and start using ghost.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-buster&quot;&gt;Setting up Buster&lt;/h3&gt;
+
+&lt;p&gt;In a new console window go to the directory where ghost is installed and type the following to setup buster:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster setup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Just follow the prompts and provide the data needed. Please view the README on the &lt;a href=&quot;https://github.com/axitkhurana/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;Buster GitHub page&lt;/a&gt; for more details on how to use Buster.&lt;/p&gt;
+
+&lt;h3 id=&quot;generating-static-pages-with-buster&quot;&gt;Generating static pages with Buster&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing this Buster had some issues with missing the generation of some needed files and creating some files with incorrect URL reference in page. I created this script as a workaround for those issue.  So create a file (I called it &lt;strong&gt;build-static.sh&lt;/strong&gt;) and be sure and change out the references to http://joshgerdes.com and replace them with your remote site URL.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; for link in site.links &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+    &lt;a class=&quot;page-link&quot; href=&quot;`{``{` link.url | prepend: site.baseurl `}``}`&quot;&gt;`{``{` link.title `}``}`&lt;/a&gt;
+&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; endfor &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{&lt;/code&gt;&lt;code&gt;%&lt;/code&gt; highlight objc &lt;code&gt;%&lt;/code&gt;&lt;code&gt;}&lt;/code&gt;
+	if (currentClass) {
+	        unsigned int methodCount;```
+	        Method &lt;em&gt;methodList = class_copyMethodList(currentClass, &amp;amp;methodCount);
+	        IMP lastImp = NULL;
+	        SEL lastSel = NULL;
+	        for (NSInteger i = 0; i &amp;lt; methodCount; i++) {
+	            Method method = methodList[i];
+	            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method))
+	                                                      encoding:NSUTF8StringEncoding];
+	            if ([@”printTest” isEqualToString:methodName]) {
+	                lastImp = method_getImplementation(method);
+	                lastSel = method_getName(method);
+	            }
+	        }
+	        typedef void (&lt;/em&gt;fn)(id,SEL);&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;        if (lastImp != NULL) {
+            fn f = (fn)lastImp;
+            f(test,lastSel);
+        }
+        free(methodList);
+} `{``%` endhighlight `%``}`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Generate static files with buster&lt;/span&gt;
+buster generate --domain&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;http://127.0.0.1:2368  
+
+&lt;span class=&quot;c&quot;&gt;# Copy sitemap files&lt;/span&gt;
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xsl
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://127.0.0.1:2368/sitemap.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-pages.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-posts.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-authors.xml
+wget --convert-links --page-requisites --no-parent --directory-prefix static --no-host-directories --restrict-file-name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unix http://localhost:2368/sitemap-tags.xml
+
+&lt;span class=&quot;c&quot;&gt;# Replace urls that were missed by buster&lt;/span&gt;
+find static/* -name robots.txt -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xsl -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#http://localhost:2368#http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.xml -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#loc&amp;gt;http://localhost:2368#loc&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#u=http://localhost:2368#u=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#url=http://localhost:2368#url=http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#href=&amp;quot;http://localhost:2368#href=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#src=&amp;quot;http://localhost:2368#src=&amp;quot;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;  
+find static/* -name *.html -type f -exec sed -i &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;s#link&amp;gt;http://localhost:2368#link&amp;gt;http://joshgerdes.com#g&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt; 
+
+&lt;span class=&quot;c&quot;&gt;# Add CNAME file for github pages&lt;/span&gt;
+buster add-domain joshgerdes.com
+
+&lt;span class=&quot;c&quot;&gt;# Copy files that were missed by buster&lt;/span&gt;
+cp humans.txt static/humans.txt
+cp -R content/images static/content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now give the newly created file execute permissions&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chmod +x ./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then just run in the directory where you installed ghost:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./build-static.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This should generate static files under a subdirectory called &lt;code&gt;/static&lt;/code&gt; which should be connected to your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: I also forked the Buster repository and made changes to the project to fix the broken URLs and add the sitemap files to the static output.  So if you want to use my version of Buster it can be found &lt;a href=&quot;https://github.com/joshgerdes/buster&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;. Hopefully my pull request will be accepted shortly and it will become part of the main script.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;previewing-static-pages&quot;&gt;Previewing static pages&lt;/h3&gt;
+
+&lt;p&gt;You can preview the static pages by running the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster preview&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then visit http://localhost:9000 in a browser to view the static pages locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;deploying-static-pages-to-github&quot;&gt;Deploying static pages to GitHub&lt;/h3&gt;
+
+&lt;p&gt;If you like what you see, you can push those changes to your GitHub repository using normal commands or type the following command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;buster deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With luck you should have a nice static version of your site published to GitHub to enjoy.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Mar 2015 19:30:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/03/12/host-a-static-ghost-blog-on-github/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/03/12/host-a-static-ghost-blog-on-github/</guid>
+        
+        <category>ghost</category>
+        
+        <category>buster</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>River Raid Classic</title>
+        <description>&lt;p&gt;Last fall I had some free time and decided to try my hand at game development again. I have been working in the mobile space for the past couple of years so I thought I’d leverage a language that was already in my daily rountine. So I went with JavaScript. I liked the idea of having the flexibility of running the game from a web browser and being able to run it natively with the help of a wrapper. I also was interested in seeing how one of these JavaScript gaming frameworks held up.  So, after a little research, I decided to go with &lt;a href=&quot;http://phaser.io&amp;quot; target=&amp;quot;_blank&quot;&gt;Phaser&lt;/a&gt; for the framework and &lt;a href=&quot;https://www.ludei.com/cocoonjs/&amp;quot; target=&amp;quot;_blank&quot;&gt;CocoonJs&lt;/a&gt; for the native wrapper.&lt;/p&gt;
+
+&lt;p&gt;For my first game I didn’t want to get tied up with working on the graphics and design of the game so I decided to create a tribute to my favorite Atari 2600 game, &lt;a href=&quot;https://en.wikipedia.org/wiki/River_Raid&amp;quot; target=&amp;quot;_blank&quot;&gt;River Raid&lt;/a&gt;. The basic 8-bit graphics would keep it simple and the gameplay was complex enough that I would get to really test out the framework.&lt;/p&gt;
+
+&lt;p&gt;Overall, I enjoyed the experience and I plan on posting more details about the things I learned using Phaser and CocoonJs in the future.&lt;/p&gt;
+
+&lt;p&gt;But for now just check out the game details &lt;a href=&quot;http://lostleafstudio.com/river-raid-classic&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt; or head over to the app store to pick up my game and start playing.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/content/images/projects/river-raid-classic-iphone6.png&quot; alt=&quot;iPhone 6 Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;download-now-for-ios-or-android&quot;&gt;Download Now for iOS or Android:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/river-raid-classic/id968418947?ls=1&amp;amp;mt=8&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;/content/images/projects/app-store-badge.png&amp;quot;&quot; alt=&quot;Download on the App Store&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.lostleafstudio.riverraid&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;/content/images/projects/google-play-badge.png&quot; alt=&quot;Get it on Google Play&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Mar 2015 14:50:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/03/03/river-raid-classic%20copy/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/03/03/river-raid-classic%20copy/</guid>
+        
+        <category>javascript</category>
+        
+        <category>phaser</category>
+        
+        <category>mobile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>River Raid Classic</title>
+        <description>&lt;p&gt;Last fall I had some free time and decided to try my hand at game development again. I have been working in the mobile space for the past couple of years so I thought I’d leverage a language that was already in my daily rountine. So I went with JavaScript. I liked the idea of having the flexibility of running the game from a web browser and being able to run it natively with the help of a wrapper. I also was interested in seeing how one of these JavaScript gaming frameworks held up.  So, after a little research, I decided to go with &lt;a href=&quot;http://phaser.io&amp;quot; target=&amp;quot;_blank&quot;&gt;Phaser&lt;/a&gt; for the framework and &lt;a href=&quot;https://www.ludei.com/cocoonjs/&amp;quot; target=&amp;quot;_blank&quot;&gt;CocoonJs&lt;/a&gt; for the native wrapper.&lt;/p&gt;
+
+&lt;p&gt;For my first game I didn’t want to get tied up with working on the graphics and design of the game so I decided to create a tribute to my favorite Atari 2600 game, &lt;a href=&quot;https://en.wikipedia.org/wiki/River_Raid&amp;quot; target=&amp;quot;_blank&quot;&gt;River Raid&lt;/a&gt;. The basic 8-bit graphics would keep it simple and the gameplay was complex enough that I would get to really test out the framework.&lt;/p&gt;
+
+&lt;p&gt;Overall, I enjoyed the experience and I plan on posting more details about the things I learned using Phaser and CocoonJs in the future.&lt;/p&gt;
+
+&lt;p&gt;But for now just check out the game details &lt;a href=&quot;http://lostleafstudio.com/river-raid-classic&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt; or head over to the app store to pick up my game and start playing.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/content/images/projects/river-raid-classic-iphone6.png&quot; alt=&quot;iPhone 6 Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;download-now-for-ios-or-android&quot;&gt;Download Now for iOS or Android:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/river-raid-classic/id968418947?ls=1&amp;amp;mt=8&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;/content/images/projects/app-store-badge.png&amp;quot;&quot; alt=&quot;Download on the App Store&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.lostleafstudio.riverraid&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;/content/images/projects/google-play-badge.png&quot; alt=&quot;Get it on Google Play&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Mar 2015 14:50:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/03/03/river-raid-classic%20copy/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/03/03/river-raid-classic%20copy/</guid>
+        
+        <category>javascript</category>
+        
+        <category>phaser</category>
+        
+        <category>mobile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>River Raid Classic</title>
+        <description>&lt;p&gt;Last fall I had some free time and decided to try my hand at game development again. I have been working in the mobile space for the past couple of years so I thought I’d leverage a language that was already in my daily rountine. So I went with JavaScript. I liked the idea of having the flexibility of running the game from a web browser and being able to run it natively with the help of a wrapper. I also was interested in seeing how one of these JavaScript gaming frameworks held up.  So, after a little research, I decided to go with &lt;a href=&quot;http://phaser.io&amp;quot; target=&amp;quot;_blank&quot;&gt;Phaser&lt;/a&gt; for the framework and &lt;a href=&quot;https://www.ludei.com/cocoonjs/&amp;quot; target=&amp;quot;_blank&quot;&gt;CocoonJs&lt;/a&gt; for the native wrapper.&lt;/p&gt;
+
+&lt;p&gt;For my first game I didn’t want to get tied up with working on the graphics and design of the game so I decided to create a tribute to my favorite Atari 2600 game, &lt;a href=&quot;https://en.wikipedia.org/wiki/River_Raid&amp;quot; target=&amp;quot;_blank&quot;&gt;River Raid&lt;/a&gt;. The basic 8-bit graphics would keep it simple and the gameplay was complex enough that I would get to really test out the framework.&lt;/p&gt;
+
+&lt;p&gt;Overall, I enjoyed the experience and I plan on posting more details about the things I learned using Phaser and CocoonJs in the future.&lt;/p&gt;
+
+&lt;p&gt;But for now just check out the game details &lt;a href=&quot;http://lostleafstudio.com/river-raid-classic&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt; or head over to the app store to pick up my game and start playing.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/content/images/projects/river-raid-classic-iphone6.png&quot; alt=&quot;iPhone 6 Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;download-now-for-ios-or-android&quot;&gt;Download Now for iOS or Android:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/river-raid-classic/id968418947?ls=1&amp;amp;mt=8&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;/content/images/projects/app-store-badge.png&amp;quot;&quot; alt=&quot;Download on the App Store&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.lostleafstudio.riverraid&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;/content/images/projects/google-play-badge.png&quot; alt=&quot;Get it on Google Play&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 03 Mar 2015 14:50:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/03/03/river-raid-classic/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/03/03/river-raid-classic/</guid>
+        
+        <category>javascript</category>
+        
+        <category>phaser</category>
+        
+        <category>mobile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Pebble Watchapp: Premier League Scores</title>
+        <description>&lt;p&gt;I got a new Pebble watch for Christmas this year and I, of course, wanted to be able to keep up-to-date on the latest Premier League scores with this new gadget. But unfortunately there were not any good app options to make that happen. So, being the good developer that I am, I decided to just make an app myself.&lt;/p&gt;
+
+&lt;p&gt;So here’s the details:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/joshgerdes/pebblejs-epl/master/marketing/header-720x320.png&quot; alt=&quot;Premier League Scores&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a pebble.js watchapp for displaying today’s English Premier League scores. Get up to the minute scores on the soccer/football matches happening today.&lt;/p&gt;
+
+&lt;p&gt;View the app details &lt;a href=&quot;https://apps.getpebble.com/applications/54a762910cd9361163000177&amp;quot; target=&amp;quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;donate&quot;&gt;Donate&lt;/h2&gt;
+
+&lt;p&gt;Do you enjoy this app? Why not buy me a beer or just help fund support with a donation.&lt;/p&gt;
+
+&lt;p&gt;Bitcoin
+&lt;code&gt;19AjVvdXwX6AdtPXepLytGQuFLxFWxgNN1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Dogecoin
+&lt;code&gt;D9g27McqAU4xm2DM2rD6XgKYsMupt6YNQL&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/joshgerdes/pebblejs-epl/master/marketing/screenshot1-144x168.png&quot; alt=&quot;Pebble EPL Screenshot #1&quot; /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/joshgerdes/pebblejs-epl/master/marketing/screenshot2-144x168.png&quot; alt=&quot;Pebble EPL Screenshot #2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;The recommended method for downloading this app is to use the Pebble appstore on your Android or iOS device.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://apps.getpebble.com/applications/54a762910cd9361163000177&amp;quot; target=&amp;quot;_blank&quot;&gt;&lt;img src=&quot;http://pblweb.com/badge/54a762910cd9361163000177/black/small/&quot; alt=&quot;Available on the Pebble App Store&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also download the PBW file &lt;a href=&quot;https://github.com/joshgerdes/pebblejs-epl/releases&amp;quot; target=&amp;quot;_blank&quot;&gt;directly from GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Feb 2015 16:00:00 +0800</pubDate>
+        <link>http://yemingyu.com//blog/2015/02/03/pebble-watchapp-premier-league-scores%20copy/</link>
+        <guid isPermaLink="true">http://yemingyu.com//blog/2015/02/03/pebble-watchapp-premier-league-scores%20copy/</guid>
+        
+        <category>pebble</category>
+        
+        <category>javascript</category>
+        
+        <category>soccer</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
