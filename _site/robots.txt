@@ -1,3 +1,0 @@
-﻿User-agent: *
-Sitemap: http://yemingyu.com/sitemap.xml
-Disallow: /ghost/
