@@ -165,114 +165,25 @@
   <article class="post-container post-container--single">
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="23 Jan 2016" class="post-meta__date date">
-        	23 Jan 2016
+        <time datetime="12 Mar 2015" class="post-meta__date date">
+        	12 Mar 2015
         </time> 
         &#8226; 
         <span class="post-meta__tags tags">
-        	on <a href="/tags/#daily">daily</a> <a href="/tags/#first">first</a> 
+        	on <a href="/tags/#ghost">ghost</a> <a href="/tags/#buster">buster</a> 
         </span>
       </div>
-      <h1 class="post-title">第一篇博客</h1>
+      <h1 class="post-title">Host a static Ghost blog on GitHub using Buster</h1>
     </header>
 
     <section class="post">
-      <p>虽然我的工作是程序员，但是最近半年其实我的主要干的事儿是养了一个小孩。 所以这半年来可以说没有积累到什么技术，反而是积累了不少养小孩的心得。 当知道了有这么次会议可以分享这半年来的心得的时候，我毫不犹豫地选定了主题。那就是</p>
-
-<p>如何打造一个让人愉快的小孩
-但考虑到这是一次开发者会议…当我把这个想法和题目提交给大会的时候，被残酷地拒绝了。考虑到我们是一次开发者大会，所以我需要找一些更合适的主题。其实如果你对自己的代码有感情的话，我们开发和维护的项目或者框架就如同自己的孩子一般这也是我所能找到的两者的共同点。所以，我将原来拟定的主题换了两个字：</p>
-
-<p><img src="/assets/images/profile.jpg" alt="有帮助的截图" />
-你可以直接 <a href="http://yemingyu.com/assets/mydoc.pdf">下载 PDF</a></p>
-
-<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="lineno">1</span> <span class="n">func</span> <span class="n">weatherViewControllerForDay</span><span class="p">(</span><span class="nl">day</span><span class="p">:</span> <span class="n">WeatherViewController</span><span class="p">.</span><span class="n">Day</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">UIViewController</span> <span class="p">{</span>
-<span class="lineno">2</span> 
-<span class="lineno">3</span>     <span class="n">let</span> <span class="n">vc</span> <span class="o">=</span> <span class="n">storyboard</span><span class="o">?</span><span class="p">.</span><span class="n">instantiateViewControllerWithIdentifier</span><span class="p">(</span><span class="s">&quot;WeatherViewController&quot;</span><span class="p">)</span> <span class="n">as</span><span class="o">!</span> <span class="n">WeatherViewController</span>
-<span class="lineno">4</span>     <span class="n">let</span> <span class="n">nav</span> <span class="o">=</span> <span class="bp">UINavigationController</span><span class="p">(</span><span class="nl">rootViewController</span><span class="p">:</span> <span class="n">vc</span><span class="p">)</span>
-<span class="lineno">5</span>     <span class="n">vc</span><span class="p">.</span><span class="n">day</span> <span class="o">=</span> <span class="n">day</span>
-<span class="lineno">6</span> 
-<span class="lineno">7</span>     <span class="k">return</span> <span class="n">nav</span>
-<span class="lineno">8</span> <span class="p">}</span></code></pre></div>
-
-<pre><code>    if (currentClass) {
-        unsigned int methodCount;
-        Method *methodList = class_copyMethodList(currentClass, &amp;methodCount);
-        IMP lastImp = NULL;
-        SEL lastSel = NULL;
-        for (NSInteger i = 0; i &lt; methodCount; i++) {
-            Method method = methodList[i];
-            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method)) encoding:NSUTF8StringEncoding];
-            if ([@"printTest" isEqualToString:methodName]) {
-                lastImp = method_getImplementation(method);
-                lastSel = method_getName(method);
-            }
-        }
-        typedef void (*fn)(id,SEL);
-        
-        if (lastImp != NULL) {
-            fn f = (fn)lastImp;
-            f(test,lastSel);
-        }
-        free(methodList);
-    }
-</code></pre>
-<blockquote>
-    <p>
-这是我在今年 1 月 10 日 @Swift 开发者大会 上演讲的文字稿。相关的视频还在制作中，没有到现场的朋友可以通过这个文字稿了解到这个 session 的内容。
-    </p>
-</blockquote>
-
-<p>虽然我的工作是程序员，但是最近半年其实我的主要干的事儿是养了一个小孩。 所以这半年来可以说没有积累到什么技术，反而是积累了不少养小孩的心得。 当知道了有这么次会议可以分享这半年来的心得的时候，我毫不犹豫地选定了主题。那就是</p>
-
-<p>如何打造一个让人愉快的小孩
-但考虑到这是一次开发者会议…当我把这个想法和题目提交给大会的时候，被残酷地拒绝了。考虑到我们是一次开发者大会，所以我需要找一些更合适的主题。其实如果你对自己的代码有感情的话，我们开发和维护的项目或者框架就如同自己的孩子一般这也是我所能找到的两者的共同点。所以，我将原来拟定的主题换了两个字：</p>
-
-<p>如何打造一个让人愉快的框架
-在正式开始前，我想先给大家分享一个故事。我们那儿的 iOS 开发小组里有一个叫做武田君的人，他的代码写得不错，做事也非常严谨，可以说是楷模般的员工。但是他有一个致命的弱点 – 喜欢自己发明轮子。他出于本能地抗拒在代码中使用第三方框架，所以接到开发任务以后他一般都要花比其他小伙伴更多的时间才能完成。</p>
-
-<p>武田君其实在各个方面都有建树…比如</p>
-
-<p>网络请求
-模型解析
-导航效果
-视图动画 …
-不过虽然造了很多轮子，但是代码的重用比较糟糕，耦合严重。在新项目中使用的话，只能复制粘贴，然后针对项目修修补补。因为承担的任务总是没有办法完成，他一直是项目deadline的决定者，在日本这种社会，压力可想而知。就在我这次回国之前，武田君来向我借了一本我本科时候最喜欢的书。就是这本：</p>
-
-<p>我有时候就想，到底是什么让一个开发者面临如此大的精神压力，我们有什么办法来缓解这种压力。在我们有限的开发生涯中，应该如何有效利用时间来做一些更有价值的事情。</p>
-
-<p>显然，我们不可能一天建成罗马，也不可能一个人建成罗马。我们需要一些方法把自己和别人写的代码组织起来，高效地利用，并以此为基础构建软件。这就涉及到使用和维护框架。如何利用框架迅速构建应用，以及在开发和发布一个框架的时候应该注意一些什么，这是我今天想讲的主题。当然，为了让大家安心和专注于今天的内容，而不是挂念武田君的命运，特此声明：</p>
-
-<p>以上故事纯属虚构，如有雷同实属巧合
-使用框架</p>
-
-<p>在了解如何制作框架之前，先让我们看看如何使用框架。可以说，如果你想成为一个框架的提供者，首先你必须是一个优秀的使用者。</p>
-
-<p>在 iOS 开发的早期，使用框架其实并不是一件让人愉悦的事情。可能有几年经验的开发者都有这样的体会，那就是：</p>
-
-<p>忘不了 那些年，被手动引用和 .a 文件所支配的恐惧
-其实恐惧源于未知，回想一下，当我们刚接触软件开发的时候，懵懵懂懂地引用了一个静态库，然后面对一排排编译器报错时候手足无措的绝望。但是当我们了解了静态库的话，我们就能克服这种恐惧了。</p>
-
-<p>什么是静态库 (Static Library)
-所谓静态库，或者说 .a 文件，就是一系列从源码编译的目标文件的集合。它是你的源码的实现所对应的二进制。配合上公共的 .h 文件，我们可以获取到 .a 中暴露的方法或者成员等。在最后编译 app 的时候.a 将被链接到最终的可执行文件中，之后每次都随着app的可执行二进制文件一同加载，你不能控制加载的方式和时机，所以称为静态库。</p>
-
-<p>在 iOS 8 之前，iOS 只支持以静态库的方式来使用第三方的代码。</p>
-
-<p>什么是动态框架 (Dynamic Framework)
-与静态相对应的当然是动态。我们每天使用的 iOS 系统的框架是以 .framework 结尾的，它们就是动态框架。</p>
-
-<p>Framework 其实是一个 bundle，或者说是一个特殊的文件夹。系统的 framework 是存在于系统内部，而不会打包进 app 中。app 的启动的时候会检查所需要的动态框架是否已经加载。像 UIKit 之类的常用系统框架一般已经在内存中，就不需要再次加载，这可以保证 app 启动速度。相比静态库，framework 是自包含的，你不需要关心头文件位置等，使用起来很方便。</p>
-
-<p>Universal Framework
-iOS 8 之前也有一些第三方库提供 .framework 文件，但是它们实质上都是静态库，只不过通过一些方法进行了包装，相比传统的 .a 要好用一些。像是原来的 Dropbox 和 Facebook 等都使用这种方法来提供 SDK。不过因为已经脱离时代，所以在此略过不说。有兴趣和需要的朋友可以参看一下这里和这里。
-title: 
-I have really enjoyed the simplicity of the <a href="https://github.com/tryghost/Ghost&quot; target=&quot;_blank">Ghost</a> blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with <a href="https://pages.github.com&quot; target=&quot;_blank">GitHub Pages</a> so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called <a href="https://github.com/axitkhurana/buster&quot; target=&quot;_blank">Buster</a>.</p>
+      <p>I have really enjoyed the simplicity of the <a href="https://github.com/tryghost/Ghost&quot; target=&quot;_blank">Ghost</a> blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with <a href="https://pages.github.com&quot; target=&quot;_blank">GitHub Pages</a> so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called <a href="https://github.com/axitkhurana/buster&quot; target=&quot;_blank">Buster</a>.</p>
 
 <h3 id="installing-buster">Installing Buster</h3>
 
-<p>Details on Buster can be found <a href="https://github.com/axitkhurana/buster&quot; target=&quot;_blank">here</a>. Basically, you need to install <strong>wget</strong> and <strong>git</strong> with <a href="http://brew.sh/&quot; target=&quot;_blank">brew</a> (if they are not already installed on your system) then install Buster with <a href="https://pip.pypa.io&quot; target=&quot;_blank">pip</a>.<br />
-Just run the following commands:</p>
+<p>Details on Buster can be found <a href="https://github.com/axitkhurana/buster&quot; target=&quot;_blank">here</a>. Basically, you need to install <strong>wget</strong> and <strong>git</strong> with <a href="http://brew.sh/&quot; target=&quot;_blank">brew</a> (if they are not already installed on your system) then install Buster with <a href="https://pip.pypa.io&quot; target=&quot;_blank">pip</a>.  Just run the following commands:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">brew install wget
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">brew install wget Just run the following commands: Just run the following commands: Just run the following commands:
 brew install git
 pip install buster</code></pre></div>
 
@@ -302,6 +213,37 @@ npm start</code></pre></div>
 <h3 id="generating-static-pages-with-buster">Generating static pages with Buster</h3>
 
 <p>At the time of writing this Buster had some issues with missing the generation of some needed files and creating some files with incorrect URL reference in page. I created this script as a workaround for those issue.  So create a file (I called it <strong>build-static.sh</strong>) and be sure and change out the references to http://joshgerdes.com and replace them with your remote site URL.</p>
+
+<p><code>{</code><code>%</code> for link in site.links <code>%</code><code>}</code></p>
+<li>
+    <a class="page-link" href="`{``{` link.url | prepend: site.baseurl `}``}`">`{``{` link.title `}``}`</a>
+</li>
+<p><code>{</code><code>%</code> endfor <code>%</code><code>}</code></p>
+
+<p><code>{</code><code>%</code> highlight objc <code>%</code><code>}</code>
+	if (currentClass) {
+	        unsigned int methodCount;```
+	        Method <em>methodList = class_copyMethodList(currentClass, &amp;methodCount);
+	        IMP lastImp = NULL;
+	        SEL lastSel = NULL;
+	        for (NSInteger i = 0; i &lt; methodCount; i++) {
+	            Method method = methodList[i];
+	            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method))
+	                                                      encoding:NSUTF8StringEncoding];
+	            if ([@”printTest” isEqualToString:methodName]) {
+	                lastImp = method_getImplementation(method);
+	                lastSel = method_getName(method);
+	            }
+	        }
+	        typedef void (</em>fn)(id,SEL);</p>
+
+<pre><code>        if (lastImp != NULL) {
+            fn f = (fn)lastImp;
+            f(test,lastSel);
+        }
+        free(methodList);
+} `{``%` endhighlight `%``}`
+</code></pre>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
 
@@ -361,39 +303,57 @@ cp -R content/images static/content</code></pre></div>
 
 <p>With luck you should have a nice static version of your site published to GitHub to enjoy.</p>
 
-
     </section>
   </article>
 
-  
-   <div class="read-more-item read-more-item-right">
-       <span class="read-more-item-dim">更早的文章</span>
-       <h2 class="post-list__post-title post-title"><a href="/blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy%202/" title="Jekyll-Uno - a minimal, responsive theme for Jekyll" title="link to Jekyll-Uno - a minimal, responsive theme for Jekyll">Jekyll-Uno - a minimal, responsive theme for Jekyll</a></h2>
-       <p class="excerpt"><code>{</code><code>%</code> for link in site.links <code>%</code><code>}</code>
+<div class="read-more">
+   <div class="read-more-item read-more-item-left">
+       <span class="read-more-item-dim">最近的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy/" title="Jekyll-Uno - a minimal, responsive theme for Jekyll" title="link to Jekyll-Uno - a minimal, responsive theme for Jekyll">Jekyll-Uno - a minimal, responsive theme for Jekyll</a></h2>
+       <p class="excerpt">`{``%` for link in site.links `%``}`
 <li>
     <a class="page-link" href="`{``{` link.url | prepend: site.baseurl `}``}`">`{``{` link.title `}``}`</a>
 </li>
-<code>{</code><code>%</code> endfor <code>%</code><code>}</code>
+`{``%` endfor `%``}`
 
-I decied to convert my site over to <a href="https://jekyllrb.com/">Jekyll</a> from <a href="https://ghost.org/">Ghost</a> and <a href="https://help.github.com/articles/using-jekyll-with-pages/">host it with Github Pages</a>. This allows all my content to live in static files and be built automatically by <a href="https://github.com">GitHub</a>. My hope is that with this simplification (and automation) I might actually post a little more this year.
+I decied to convert my site over to [Jekyll](https://jekyllrb.com/) from [Ghost](https://ghost.org/) and [host it with Github Pages](https://help.github.com/articles/using-jekyll-with-pages/). This allows all my content to live in static files and be built automatically by [GitHub](https://github.com). My hope is that with this simplification (and automation) I might actually post a little more this year.  
 
-During the conversion process I decided that I liked the theme I was currently using with <a href="https://ghost.org/">Ghost</a> but found it was not available for <a href="https://jekyllrb.com/">Jekyll</a> yet.  So I decided to port the theme over and share.
+During the conversion process I decided that I liked the theme I was currently using with [Ghost](https://ghost.org/) but found it was not available for [Jekyll](https://jekyllrb.com/) yet.  So I decided to port the theme over and share.
 
-Even if this doesn’t motivate me to post more at least a new <a href="https://jekyllrb.com/">Jekyll</a> theme came out of it. Enjoy!
+Even if this doesn't motivate me to post more at least a new [Jekyll](https://jekyllrb.com/) theme came out of it. Enjoy!
 
-<h3 id="jekyll-uno-theme">Jekyll-Uno Theme</h3>
+### Jekyll-Uno Theme
 
-<a href="https://github.com/joshgerdes/jekyll-uno"><img src="https://raw.githubusercontent.com/joshgerdes/jekyll-uno/master/screenshot.png" alt="Jekyll-Uno Theme screenshot" /></a>
+[![Jekyll-Uno Theme screenshot](https://raw.githubusercontent.com/joshgerdes/jekyll-uno/master/screenshot.png)](https://github.com/joshgerdes/jekyll-uno)
 
-More details can be found on the theme’s <a href="https://github.com/joshgerdes/jekyll-uno">project page</a>.
+More details can be found on the theme's [project page](https://github.com/joshgerdes/jekyll-uno).
+
+
 
 &hellip;</p>
+       <!--p class="excerpt">&hellip;</p-->
        <div class="post-list__meta">
        <time datetime="9 Jan 2016" class="post-list__meta--date date">9 Jan 2016
           </time> &#8226;  <span class="post-list__meta--tags tags">
             on 
           </span>
-          <a class="btn-border-small" href="/blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy%202/" title="Jekyll-Uno - a minimal, responsive theme for Jekyll">继续阅读</a>
+          <a class="btn-border-small" href="/blog/2016/01/09/jekyll-uno-a-minimal-responsive-theme-for-jekyll%20copy/" title="Jekyll-Uno - a minimal, responsive theme for Jekyll">继续阅读</a>
+        </div>
+   </div>
+
+  
+   <div class="read-more-item read-more-item-right">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/blog/2015/03/12/host-a-static-ghost-blog-on-github%20copy/" title="Host a static Ghost blog on GitHub using Buster" title="link to Host a static Ghost blog on GitHub using Buster">Host a static Ghost blog on GitHub using Buster</a></h2>
+       <p class="excerpt">I have really enjoyed the simplicity of the <a href="https://github.com/tryghost/Ghost&quot; target=&quot;_blank">Ghost</a> blogging system and wanted to use it for my personal site.  But I also enjoyed the ease of hosting with <a href="https://pages.github.com&quot; target=&quot;_blank">GitHub Pages</a> so I needed to find a way to generate a static version of a Ghost blog.  Luckily someone already had a handy little tool for the job called <a href="https://github.com/axitkhurana/buster&quot; target=&quot;_blank">Buster</a>.
+
+&hellip;</p>
+       <div class="post-list__meta">
+       <time datetime="12 Mar 2015" class="post-list__meta--date date">12 Mar 2015
+          </time> &#8226;  <span class="post-list__meta--tags tags">
+            on 
+          </span>
+          <a class="btn-border-small" href="/blog/2015/03/12/host-a-static-ghost-blog-on-github%20copy/" title="Host a static Ghost blog on GitHub using Buster">继续阅读</a>
         </div>
    </div>
 
