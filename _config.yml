@@ -19,6 +19,7 @@ paginate: 10
 permalink: /blog/:year/:month/:day/:title/
 #permalink: "page:num"
 markdown: kramdown
+#highlighter: pygments
 highlighter: pygments
 excerpt_separator: "\n\n\n"
 

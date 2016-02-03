@@ -1,6 +1,6 @@
 ---
 layout: post_ymy
-title: 第一篇博客
+title: 博客之路start
 date: '2016-01-23 01:17:00'
 tags: [daily,first]
 ---
