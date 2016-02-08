@@ -26,7 +26,7 @@ layout: default_ymy
    <div class="read-more-item read-more-item-left">
        <span class="read-more-item-dim">最近的文章</span>
        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}" title="{{ page.next.title }}" title="link to {{page.next.title}}">{{page.next.title}}</a></h2>
-       <p class="excerpt">{{ page.next.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+       <p class="excerpt">{{ page.next.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}&hellip;</p>
        <!--p class="excerpt">{{ page.next.excerpt.characters="100"}}&hellip;</p-->
        <div class="post-list__meta">
        <time datetime="{{ page.next.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ page.next.date | date: "%-d %b %Y" }}
@@ -42,7 +42,7 @@ layout: default_ymy
    <div class="read-more-item read-more-item-right">
        <span class="read-more-item-dim">更早的文章</span>
        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ page.previous.url | remove_first: '/' }}" title="{{ page.previous.title }}" title="link to {{page.previous.title}}">{{page.previous.title}}</a></h2>
-       <p class="excerpt">{{ page.previous.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+       <p class="excerpt">{{ page.previous.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}&hellip;</p>
        <div class="post-list__meta">
        <time datetime="{{ page.previous.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ page.previous.date | date: "%-d %b %Y" }}
           </time> &#8226;  <span class="post-list__meta--tags tags">
