@@ -121,7 +121,7 @@ void dontDoThisEither() {
 所以在参数为void的时候，尽量也带上(void)，不省略了。
 
 4.关于block的内存管理
-block在非ARC中有三种，ARC中有两种，现在已经完全进入ARC时代，了解这几种情况对于我们理解apple代码以及代码的不断演进很有帮助。
+block在MRC中有三种，ARC中有两种，现在已经完全进入ARC时代，了解这几种情况对于我们理解apple代码以及代码的不断演进很有帮助。
 
 <p><li>__NSGlobalBlock__</li></p>
 当block内部没用引用任何外部变量时，block为__NSGlobalBlock__，copy之后依然为__NSGlobalBlock__。
@@ -158,7 +158,7 @@ block在非ARC中有三种，ARC中有两种，现在已经完全进入ARC时代
 在ARC中，block默认都经过了copy，放在heap上。
 
 <p><li>__NSStackBlock__</li></p>
-在非ARC中，testMalloc为__NSStackBlock__,testMallocCopy才为__NSMallocBlock__。apple之所以将ARC中block默认位置放在heap上，是为了防止block因位于栈区，而在后面调用时栈被释放造成crash。
+在MRC中，testMalloc为__NSStackBlock__,testMallocCopy才为__NSMallocBlock__。apple之所以将ARC中block默认位置放在heap上，是为了防止block因位于栈区，而在后面调用时栈被释放造成crash。
 实例代码如下：
 {% highlight objc %}    
     MYCompletion func()
@@ -223,7 +223,7 @@ if (block)
     block(123);
 }
 
-//非ARC，非ARC加上retain和release
+//MRC，MRC加上retain和release
 MyBlockType block = [self.testBlock retain];
 if (block)
 {
@@ -234,7 +234,7 @@ if (block)
 
 7.block的引用循环问题
 使用block引入的最大的问题就是引用循环问题，不仅是block，而是apple中内存管理一个很大的问题就是引用循环，环越大越难发现，这点Android就可以处理，算是apple有所取舍吧，毕竟引用计数相对垃圾回收感觉效率上还是会好一些。
-在ARC下用__weak来处理，在非ARC下用__block来处理。
+在ARC下用__weak来处理，在MRC下用__block来处理。
 实例代码如下：
 {% highlight objc %}
 //ARC
@@ -247,7 +247,7 @@ if (block)
         return 0;
     };
 
-//非ARC
+//MRC
     __block typeof(self) weakSelf = self;
     self.testBlock = ^(int paramInt)
     {
