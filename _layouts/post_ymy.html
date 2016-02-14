@@ -22,7 +22,7 @@ layout: default_ymy
   </article>
 
 <div class="read-more">
-  {%if page.next %}
+{%if page.next %}
    <div class="read-more-item read-more-item-left">
        <span class="read-more-item-dim">最近的文章</span>
        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ page.next.url | remove_first: '/' }}" title="{{ page.next.title }}" title="link to {{page.next.title}}">{{page.next.title}}</a></h2>
