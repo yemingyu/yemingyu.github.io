@@ -1,7 +1,7 @@
 ---
 layout: post_ymy
 title: 本博客搭建与博客编写参考
-date: '2016-02-3 18:08:00'
+date: '2016-02-03 18:08:00'
 tags: [Record]
 ---
 
@@ -57,4 +57,15 @@ tags: [Record]
 
 本博客在搭建时参考了iOS界大神[喵神](http://onevcat.com/)的博客的风格，但他是基于[Ghost](https://ghost.org/)搭建的，而本文是基于[jekyll](http://jekyll.bootcss.com/)搭建，搭建过程中得到了大V同时是代码女神的[羡辙同学](http://zhangwenli.com/)的大力帮助，这里再次感谢一下下！
 
-
+### Tips
+后来用jekyll server启动服务时出现了以下错误：
+{% highlight js %}
+You are missing a library required for Markdown. Please run:
+$ [sudo] gem install kramdown
+Conversion error: Jekyll::Converters::Markdown encountered an error while converting '_posts/2016-02-03-本博客搭建.markdown/#excerpt':
+                Missing dependency: kramdown
+         ERROR: YOUR SITE COULD NOT BE BUILT:
+                ------------------------------------
+                Missing dependency: kramdown
+{% endhighlight %}
+原因是```/Library/Ruby/Gems/2.0.0/gems/```下面的jekyll版本与实际用的```jekyll```版本不一致，输入命令```which jekyll```可知```jekyll```在```/usr/bin/jekyll```，解决方法是先卸载所有的```jekyll```，然后安装```/Library/Ruby/Gems/2.0.0/gems/```对应版本的```jekyll```，然后将```/usr/bin/jekyll```拷贝到```/usr/local/bin/```下面，最后一个需要拷贝可能是我之前加了软链接的原因，如果没有报找不到```/usr/local/bin/jekyll```就不需要了。
