@@ -1,9 +1,21 @@
 ---
-layout: post_ymy
-title: 本博客搭建与博客编写参考
-date: '2016-02-03 18:08:00'
-tags: [Record]
+layout:     post
+title:      "本博客搭建与博客编写参考 "
+subtitle:   "博客搭建"
+date:       2016-02-03
+author:     "夜禹"
+header-img: "img/post-bg-see-u-ali.jpg"
+category: Record
+header-mask: 0.3
+catalog:    true
+tags:
+    - Record
 ---
+
+
+
+> Yeah It's on. 
+
 
 ### 本博客搭建
 本博客在搭建时使用了Github Pages,主要参考[这个链接](http://www.jianshu.com/p/05289a4bc8b2)中的内容进行域名申请，配置Github，将域名与Github Pages绑定等。

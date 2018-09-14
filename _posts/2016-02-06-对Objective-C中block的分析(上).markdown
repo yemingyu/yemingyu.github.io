@@ -1,11 +1,18 @@
 ---
-layout: post_ymy
-title: 对Objective-C中block的分析(上)
-date: '2016-02-06 14:51:00'
-tags: [知识点浅析]
+layout:     post
+title:      "对Objective-C中block的分析(上) "
+subtitle:   "block分析"
+date:       2016-02-06
+author:     "夜禹"
+header-img: "img/post-bg-see-u-ali.jpg"
+category: Block
+header-mask: 0.3
+catalog:    true
+tags:
+    - 知识点浅析
 ---
 
-<blockquote>间间断断的学习iOS开发到现在已有一年半多了，之前一直用OneNote记录点点滴滴，时间久了，不免杂乱，故而在此对每个感兴趣的点进行分析与总结。</blockquote>
+> 间间断断的学习iOS开发到现在已有一年半多了，之前一直用OneNote记录点点滴滴，时间久了，不免杂乱，故而在此对每个感兴趣的点进行分析与总结。
 
 ### block官方文档浅析
 block的概念是在iOS4.0开始出现的，通过对apple官方文档的阅读做以下总结与分析：

@@ -1,11 +1,19 @@
 ---
-layout: post_ymy
-title: 对Objective-C中block的分析(下)
-date: '2016-02-13 17:43:00'
-tags: [知识点浅析]
+layout:     post
+title:      "对Objective-C中block的分析(下) "
+subtitle:   "block分析"
+date:       2016-02-13
+author:     "夜禹"
+header-img: "img/post-bg-see-u-ali.jpg"
+category: Block
+header-mask: 0.3
+catalog:    true
+tags:
+    - Record
 ---
 
-block大大简化了代码，在apple官方代码以及各种第三方开源库中广泛使用。<br />
+> block大大简化了代码，在apple官方代码以及各种第三方开源库中广泛使用。<br />
+
 主要有两大用处：
 <p><li>参数</li></p>
 通常作为最后一个参数用来call back，最常见的是网络中suceess和failure的callback。
