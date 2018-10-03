@@ -78,7 +78,7 @@ leancloud_app_key: UTrQIscJrhjzqvFBO3Lfbjjn
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "不积跬步无以至千里<br>不积小流无以成江海"
-sidebar-avatar: /img/avatar-yeyu-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-programmar.gif      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
