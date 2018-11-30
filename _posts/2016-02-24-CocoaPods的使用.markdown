@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "CocoaPos的使用 "
+title:      "CocoaPods的使用 "
 subtitle:   "CocoaPods"
 date:       2016-02-24
 author:     "夜禹"
 header-img: "img/post-bg-see-u-ali.jpg"
-description: "这几个月在使用Git的过程中学到了不少实用的小技能，小赵准备简单总结一下，来与大家分享。也欢迎大家在评论区不断补充~"
+description: "这几个月在使用Git的过程中学到了不少实用的小技能，准备简单总结一下，来与大家分享。也欢迎大家在评论区不断补充~"
 category: Record
 header-mask: 0.3
 catalog:    true
