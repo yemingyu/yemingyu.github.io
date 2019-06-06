@@ -3,7 +3,7 @@ layout:     post
 title:      "本博客搭建与博客编写参考 "
 subtitle:   "博客搭建"
 date:       2016-02-03
-author:     "夜禹"
+author:     "大禹"
 header-img: "img/post-bg-see-u-ali.jpg"
 category: Record
 header-mask: 0.3

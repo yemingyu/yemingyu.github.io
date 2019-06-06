@@ -1,7 +1,7 @@
 > 看看书、写写代码  
 > 源码面前，没有秘密
 
-Hey，我是夜禹
+Hey，我是大禹
 
 职业是无线开发工程师，目前在 [蚂蚁金服](https://www.alipay.com/) 做 [支付宝](https://www.baidu.com/link?url=eV_iVYd3O6ey64kUY3aTtppwKP_VEUdGzuVRNSsB6j9ivM62qCaYz-Yz1JVnRnLBLpvLpEmTfuuodH4W2v4yczA4xwAMBKkOEFQLpKtPa-2vHpC9QjlnLIxPKOmmnVtv&wd=&eqid=c90e58930002159d000000045bb33be9) 的性能优化，曾在 [手机淘宝](https://itunes.apple.com/cn/app/%E6%B7%98%E5%AE%9D-%E7%A7%BB%E5%8A%A8%E8%B4%AD%E7%89%A9-%E7%94%9F%E6%B4%BB%E7%A4%BE%E5%8C%BA/id387682726?mt=8) 参与店铺等相关开发。
 

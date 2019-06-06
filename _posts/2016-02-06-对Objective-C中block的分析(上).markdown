@@ -3,7 +3,7 @@ layout:     post
 title:      "对Objective-C中block的分析(上) "
 subtitle:   "block分析"
 date:       2016-02-06
-author:     "夜禹"
+author:     "大禹"
 header-img: "img/post-bg-see-u-ali.jpg"
 category: Block
 header-mask: 0.3

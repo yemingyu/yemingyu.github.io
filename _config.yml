@@ -1,10 +1,10 @@
 # Site settings
-title: 夜禹 Blog
-SEOTitle: 夜禹的博客 | 夜禹 Blog
+title: 大禹 Blog
+SEOTitle: 大禹的博客 | 大禹 Blog
 header-img: img/home-bg.jpg
 email: me@yemingyu.com
-description: "关于大前端与服务端、基础理论 | 夜禹，这里是 夜禹 的个人博客，与你共同学习。"
-keyword: "夜禹, 夜禹的博客, 夜禹 Blog, 博客, 个人网站, 互联网, Web, iOS、ReiOS、Server"
+description: "关于大前端与服务端、基础理论 | 大禹，这里是 大禹 的个人博客，与你共同学习。"
+keyword: "大禹, 大禹的博客, 大禹 Blog, 博客, 个人网站, 互联网, Web, iOS、ReiOS、Server"
 url: "https://yemingyu.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 

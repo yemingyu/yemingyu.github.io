@@ -3,7 +3,7 @@ layout:     post
 title:      "MWeb Mac App 逆向"
 subtitle:   "逆向 Mac App"
 date:       2019-3-11
-author:     "夜禹"
+author:     "大禹"
 header-img: "img/in-post/1004/usephone.jpg"
 description: "这里记录了逆向 Mac App 的简单做法"
 category: 逆向 移动端 Mac App

@@ -3,7 +3,7 @@ layout:     post
 title:      "CocoaPods的使用 "
 subtitle:   "CocoaPods"
 date:       2016-02-24
-author:     "夜禹"
+author:     "大禹"
 header-img: "img/post-bg-see-u-ali.jpg"
 description: "这几个月在使用Git的过程中学到了不少实用的小技能，准备简单总结一下，来与大家分享。也欢迎大家在评论区不断补充~"
 category: Record
